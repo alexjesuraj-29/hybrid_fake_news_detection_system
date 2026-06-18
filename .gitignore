@@ -1,0 +1,76 @@
+# ==================================
+# Virtual Environment
+# ==================================
+venv/
+env/
+.venv/
+ENV/
+
+# ==================================
+# Python Cache
+# ==================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# ==================================
+# IDE / Editor
+# ==================================
+.vscode/
+.idea/
+*.swp
+
+# ==================================
+# OS Files
+# ==================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==================================
+# Secrets & Keys (CRITICAL!)
+# ==================================
+*.env
+.env
+.streamlit/secrets.toml
+*API*Key*.txt
+*api*key*.txt
+data/News API Key.txt
+data/LATEST NEWS API KEY*.txt
+
+# ==================================
+# Training Data (too large)
+# ==================================
+data/Fake.csv
+data/True.csv
+data/combined.csv
+data/
+
+# ==================================
+# Model Training Checkpoints
+# ==================================
+distilbert_results/
+checkpoint-*/
+*.bin
+*.safetensors
+*.h5
+*.ckpt
+*.pt
+*.pth
+
+# ==================================
+# Installer / Binaries
+# ==================================
+tesseract app/
+*.exe
+*.msi
+*.zip
+*.tar.gz
+
+# ==================================
+# Logs
+# ==================================
+*.log
+logs/distilbert_model/
