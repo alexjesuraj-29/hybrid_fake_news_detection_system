@@ -69,8 +69,10 @@ STOPWORDS = {
 
 @st.cache_resource
 def load_model():
-    tokenizer = DistilBertTokenizer.from_pretrained("distilbert_model")
-    model = DistilBertForSequenceClassification.from_pretrained("distilbert_model")
+    # Load from Hugging Face Hub (replace with your username)
+    model_name = "alexjesuraj-29/fake-news-distilbert"
+    tokenizer = DistilBertTokenizer.from_pretrained(model_name)
+    model = DistilBertForSequenceClassification.from_pretrained(model_name)
     model.eval()
     return tokenizer, model
 
